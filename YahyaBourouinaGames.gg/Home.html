@@ -1,0 +1,674 @@
+<html>
+	<head>
+		<title>YahyaBourouina Games</title>
+		<link rel="icon" href="./Img/ico.png">
+		<style>
+* {
+	margin: 0;
+	padding: 0;
+	transition: 0.5s;
+}
+body {
+	background-image: url('./Img/Logox2.png ');
+	animation: linearColorgames 50s ease infinite;
+}
+/* width */
+::-webkit-scrollbar {
+	width: 7px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+	box-shadow: inset 0 0 5px grey; 
+	border-radius: 50px;
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+	background: linear-gradient(to bottom, #2E0249, #570A57, #A91079, #F806CC);
+	border-radius: 50px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+	background: linear-gradient(to bottom, #F806CC, #2E0249, #570A57, #A91079);
+}
+
+header {
+	padding: 2px;
+	background: black;
+	height: 60px;
+	width: 100%;
+	position: fixed;
+}
+header .button {
+	background: #0096FF;
+	color: #FEDB39;
+	float: right;
+	border: none;
+	outline: none;
+	cursor: pointer;
+	padding: 14px 16px;
+	font-size: 17px;
+	width: 10%;
+	margin-top: 7.2px;
+	margin-right: 7.2px;
+}
+header .button:hover {
+	opacity: 0.5;
+}
+header .button:active {
+	transform: scale(0.7);
+}
+header .button:focus {
+	background: #5800FF;
+}
+header .Logox2 {
+	width: 80px;
+	position: relative:
+	display: inline;
+}
+header .LogoxN {
+	width: 300px;
+	position: relative:
+	display: inline;
+	padding-bottom: 20px;
+}
+footer {
+	position: fixed;
+	width: 100%;
+	color: gray;
+	background: #800080;
+	bottom:0;
+	left:0;
+	color: #fff;
+	text-shadow:
+		0 0 7px #fff,
+		0 0 10px #fff,
+		0 0 21px #fff,
+		0 0 42px #0fa,
+		0 0 82px #0fa,
+		0 0 92px #0fa,
+		0 0 102px #0fa,
+		0 0 151px #0fa;
+}
+#attention {
+	position: fixed;
+	background: red;
+	color: #fff;
+	width: 300px;
+	height: 100px;
+	text-align: center;
+	font-size: 20px;
+	padding: 5px;
+	border-radius: 15px;
+	margin: auto;
+	bottom:0;
+	left:0;
+	top:0;
+	right:0;
+	transform: scale(0);
+	box-shadow:
+		0 0 7px #fff,
+		0 0 10px #fff,
+		0 0 21px #fff,
+		0 0 42px #F90716,
+		0 0 82px #F90716,
+		0 0 92px #F90716,
+		0 0 102px #F90716,
+		0 0 151px #F90716;
+}
+#attention button {
+	padding: 5px;
+	margin-top: 40px;
+	cursor: pointer;
+	border: none;
+	outline: none;
+	background: #fff;
+	color: red;
+}
+#home {
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	background-image: linear-gradient( 110.6deg,  rgba(179,157,219,1) 7%, rgba(150,159,222,1) 47.7%, rgba(24,255,255,1) 100.6% );
+	display: inline;
+	overflow: auto;
+	animation: linearColorgames 20s ease infinite;
+	background-size: 200%;
+}
+
+#about {
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	background-image: linear-gradient( 65.9deg,  rgba(85,228,224,0.90) 5.5%, rgba(75,68,224,0.74) 54.2%, rgba(64,198,238,0.80) 55.2%, rgba(177,36,224,1) 98.4% );
+	display: inline;
+	overflow: auto;
+	animation: linearColorgames 20s ease infinite;
+	background-size: 200%;
+}
+#games {
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	background-image: linear-gradient( 69.7deg,  rgba(244,37,243,1) 1.4%, rgba(244,87,1,1) 36.2%, rgba(255,204,37,1) 72.2%, rgba(20,196,6,1) 113% );
+	display: inline;
+	overflow: auto;
+	animation: linearColorgames 5s ease infinite;
+	background-size: 200%;
+}
+#games h1 .settingsIco {
+	position: absolute;
+	display: inline;
+	right: 0;
+	margin-right: 5px;
+	width: 40px;
+	cursor: pointer;
+}
+#games h1 .settingsIco:hover {
+	transform: rotateZ(50deg);
+}
+#games h1 .settingsIco:active {
+	transform: scale(0.8);
+}
+@keyframes linearColorgames {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+}
+
+.Welcome {
+	text-shadow:
+		0 0 7px #fff,
+		0 0 10px #fff,
+		0 0 21px #fff,
+		0 0 42px #93FFD8,
+		0 0 82px #93FFD8,
+		0 0 92px #93FFD8,
+		0 0 102px #93FFD8,
+		0 0 151px #93FFD8;
+}
+.featurgamebox {
+	float: left;
+	position: relative;
+	display: block;
+	margin: 10px;
+	width: 15%;
+	background-image: linear-gradient(to right, #2E0249, #570A57, #A91079, #F806CC);
+	border-radius: 10px;
+	background-size: 200%;
+}
+.featurgamebox:hover {
+	animation: linearColorfeaturgamebox 5s ease infinite;
+	background-size: 200%;
+	transform: scale(1.1);
+}
+@keyframes linearColorfeaturgamebox {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 200% 50%;
+	}
+}
+.featurgamebox img {
+	float:top;
+	width: 100%;
+}
+.featurgamebox a {
+	text-decoration: none;
+	color: #FFF;
+	font-size: 150%;
+}
+.featurgamebox p {
+	padding: 2px;
+	display: inline;
+}
+.featurgamebox .imgbtn {
+	width: 24px;
+	float: right;
+	cursor: pointer;
+}
+.featurgamebox .imgbtn:hover {
+	transform: scale(1.2);
+}
+.featurgamebox .imgbtn:active {
+	transform: scale(0.5);
+}
+.featurgamebox .info {
+  position: relative;
+  display: inline;
+}
+.featurgamebox .info .infotext {
+	transform: scale(0);
+	width: 120px;
+	background-image: linear-gradient(to bottom, #000000, #293462, #2E0249, #4700D8);
+	color: #fff;
+	text-align: center;
+	border-radius: 6px;
+	padding: 5px 0;
+	margin-top: -100px;
+	margin-left: -30px;
+	position: absolute;
+	z-index: 1;
+}
+.featurgamebox .info:hover .infotext {
+	transform: scale(1);
+}
+.featurgamebox .free {
+	width: 50px;
+	top: -20px;
+	right: -20px;
+	position: absolute;
+	z-index: 1;
+}
+.featurgamebox .Sale {
+	width: 60px;
+	top: -10px;
+	right: -20px;
+	position: absolute;
+	z-index: 1;
+	transform: rotateZ(20);
+}
+.bgNG {
+	background-image: linear-gradient( 109.6deg,  rgba(255,24,134,1) 11.2%, rgba(252,232,68,1) 52%, rgba(53,178,239,1) 100.2% );
+	background-size: 200%;
+}
+#SaleGameBox {
+	width: 320px;
+	height: 120px;
+	position: fixed;
+	bottom: 38px;
+	right: 20px;
+	background: white;
+	border-radius: 23px;
+	padding: 12px;
+	cursor: pointer;
+	animation: notification 1s;
+}
+@keyframes notification {
+	from {
+		right: -1000px;
+	}
+	to {
+		right: 20px;
+	}
+}
+#SaleGameBox .sideImg {
+	position: absolute;
+	width: 100px;
+	display: inline;
+	left: -85px;
+	top: 20px;
+}
+#SaleGameBox .closebtnSGB {
+	position: absolute;
+	width: 50px;
+	right: 0;
+	cursor: pointer;
+}
+#SaleGameBox .closebtnSGB:hover {
+	transform: rotateZ(360deg);
+}
+#settingsBox {
+	position: fixed;
+	background: white;
+	color: black;
+	width: 500px;
+	height: 70%;
+	padding: 10px;
+	border-radius: 15px;
+	margin: auto;
+	bottom:0;
+	left:0;
+	top:0;
+	right:0;
+	transform: scale(0);
+}
+#bgStngsGry {
+	position: fixed;
+	background: black;
+	width: 100%;
+	height: 100%;
+	margin: auto;
+	bottom:0;
+	left:0;
+	top:0;
+	right:0;
+	transform: scale(0);
+	opacity: 0.6;
+}
+#settingsBox .closebtnSB {
+	position: fixed;
+	width: 50px;
+	right: 0;
+	cursor: pointer;
+}
+#settingsBox .closebtnSB:hover {
+	transform: rotateZ(360deg);
+}
+#settingsBox .btn {
+	width: 150px;
+	padding: 7px;
+	display: block;
+	background: #ffa024;
+	border-left: 0px;
+	border-top: 0px;
+	border-bottom-color: red;
+	border-right-color: red;
+	border-bottom-width: 3px;
+	border-right-width: 3px;
+	border-radius: 25px;
+	outline: none;
+	margin: auto;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	top: 0;
+}
+#settingsBox .btn:hover {
+	width: 150px;
+	border-bottom-width: 4px;
+	border-right-width: 4px;
+	cursor: pointer;
+	transform: scale(1.1);
+	opacity: 0.8;
+}
+#settingsBox .btn:active {
+	border-bottom-width: 0px;
+	border-right-width: 0px;
+	cursor: pointer;
+	transform: scale(0.8);
+	opacity: 0.6;
+}
+
+
+#MainInternet {
+	position: fixed;
+	color: #fff;
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	font-size: 20px;
+	padding: 5px;
+	border-radius: 15px;
+	margin: auto;
+	bottom:0;
+	left:0;
+	top:0;
+	right:0;
+	transform: scale(0);
+	opacity: 0.7;
+}
+#internetStatusDiv{
+    position: fixed;
+	color: #fff;
+	width: 300px;
+	height: 100px;
+	text-align: center;
+	font-size: 20px;
+	padding: 5px;
+	border-radius: 15px;
+	margin: auto;
+	bottom:0;
+	left:0;
+	top:0;
+	right:0;
+}
+.reloadNet {
+	width: 20px;
+	display: inline;
+	animation: rotateNet 2s infinite;
+}
+@keyframes rotateNet {
+	from {transform: rotateZ(0deg);}
+	to {transform: rotateZ(360deg);}
+}
+
+#s {
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	margin: 20px;
+	text-align: center;
+}
+
+
+
+@media only screen and (max-width: 960px) {
+	.featurgamebox {
+		width: 200px;
+	}
+	header .button {
+		background: #5f5;
+		color: #654899;
+		float: right;
+		border: none;
+		outline: none;
+		cursor: pointer;
+		padding: 14px 5px;
+		font-size: 14px;
+		width: 10%;
+		margin-top: 7.2px;
+		margin-right: 7.2px;
+	}
+}
+
+@media only screen and (max-width: 613px) {
+	header .button {
+		background: #5f5;
+		color: #654899;
+		float: right;
+		border: none;
+		outline: none;
+		cursor: pointer;
+		padding: 14px 5px;
+		font-size: 14px;
+		width: 10%;
+		margin-top: 7.2px;
+		margin-right: 7.2px;
+	}
+	header .LogoxN {
+		width: 0px;
+		position: fixed:
+		display: inline;
+		padding-bottom: 0px;
+		transform: scale(0);
+	}
+	#settingsBox {
+		width: 100%;
+		height: 100%;
+		border-radius: 0px;
+		background: #444;
+		color: white;
+	}
+	#settingsBox .closebtnSB {
+		right: 25px;
+	}
+}
+.SoldGame {
+	transform: scale(1);
+}
+.FreeGame {
+	transform: scale(1);
+}
+
+
+@media only screen and (max-width: 482px) {
+	header .button {
+		padding: 14px 5px;
+		font-size: 14px;
+		width: 75px;
+		margin-top: 7.2px;
+		margin-right: 7.2px;
+	}
+	#attention {
+		transform: scale(1);
+	}
+	#SaleGameBox {
+		right: -500;
+	}
+}
+
+@media only screen and (max-width: 444px) {
+	.featurgamebox {
+		width: 200px;
+	}
+	
+	.featurgamebox .imgbtn {
+		width: 30px;
+		float: right;
+		cursor: pointer;
+		z-index: 1;
+	}
+	.featurgamebox a p {
+		font-size: 30px;
+	}
+	header .button {
+		padding: 14px 5px;
+		font-size: 14px;
+		width: 75px;
+		margin-top: 7.2px;
+		margin-right: 7.2px;
+	}
+	header .LogoxN {
+		width: 0px;
+		position: fixed:
+		display: inline;
+		padding-bottom: 0px;
+		transform: scale(0);
+	}
+}
+
+
+@media only screen and (max-width: 439px) {
+	.featurgamebox {
+		width: 100%;
+		margin: 0;
+		margin-bottom: 10px;
+	}
+	.featurgamebox:hover {
+		transform: scale(1);
+	}
+	.featurgamebox .info .infotext {
+		margin-top: -130px;
+		margin-left: 0px;
+	}
+	header .button {
+		padding: 14px 5px;
+		font-size: 14px;
+		width: auto;
+		margin-top: 7.2px;
+		margin-right: 7.2px;
+	}
+	#attention {
+		width: 100%;
+		border-radius: 0px;
+	}
+}
+		</style>
+	</head>
+	<body onload="showHomeNhideAboutNothers()">
+		<div id="home">
+			<br><br><br><br>
+			<h1 align="center" class="Welcome">Welcome to YahyaBourouina Games</h1><br>
+			<h2>Featured Games&nbsp;:</h2><br>
+			<!-- GameBox style (<!--a-- >)-->
+			<div class="featurgamebox">
+				<a href="#">
+					<img src="./Img/Box.png"><p>&nbsp;Name</p>
+				</a>
+				<p>
+					<img onclick="Gameloved(this)" id="gm" class="imgbtn" src="./Img/love.png">
+					<img onclick="Gamedwnld(this)" class="imgbtn" src="./Img/add-to-cart.png">
+					<div class="info">
+						<img class="imgbtn" src="./Img/info.png">
+						<span class="infotext">Tooltip text</span>
+                    </div>
+				</p>
+			</div>
+			<!--a-->
+			<div class="featurgamebox">
+				<a href="#">
+					<img src="./Img/Box.png"><p>&nbsp;Name</p>
+				</a>
+				<p>
+					<img onclick="Gameloved(this)" id="gm" class="imgbtn" src="./Img/love.png">
+					<img onclick="Gamedwnld(this)" class="imgbtn" src="./Img/download.png">
+					<div class="info">
+						<img class="imgbtn" src="./Img/info.png">
+						<span class="infotext">Tooltip00 text</span>
+                    </div>
+				</p>
+				<img class="free" src="./Img/free.png" />
+			</div>
+			<!--a-->
+		</div>
+		<!-- About -->
+		<div id="about">
+			<br><br><br><br>
+			<h1>About</h1>
+		</div>
+		<!-- Games -->
+		<div id="games">
+			<br><br><br><br>
+			<h1>Games&nbsp;<i><p style="float: right; font-size: 25px;" id="PricingInfo">All Games ←<small>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.</small></p></i><img onclick="showSettingsBox()" class="settingsIco" src="./Img/settings.png"></h1><br>
+			<!--a-->
+			<div class="featurgamebox bgNG FreeGame" ><a href="#"><img src="./Img/Box.png"><p>&nbsp;Name</p></a><p><img onclick="Gameloved(this)" id="gm" class="imgbtn" src="./Img/love.png"><img onclick="Gamedwnld(this)" class="imgbtn" src="./Img/download.png"><div class="info"><img class="imgbtn" src="./Img/info.png"><span class="infotext">Tooltip00 text</span></div></p><img class="free" src="./Img/free.png" /></div>
+			<div class="featurgamebox bgNG FreeGame" ><a href="#"><img src="./Img/Box.png"><p>&nbsp;Name</p></a><p><img onclick="Gameloved(this)" id="gm" class="imgbtn" src="./Img/love.png"><img onclick="Gamedwnld(this)" class="imgbtn" src="./Img/download.png"><div class="info"><img class="imgbtn" src="./Img/info.png"><span class="infotext">Tooltip00 text</span></div></p><img class="free" src="./Img/free.png" /></div>
+			<div class="featurgamebox bgNG SoldGame" ><a href="#"><img src="./Img/Box.png"><p>&nbsp;Name</p></a><p><img onclick="Gameloved(this)" id="gm" class="imgbtn" src="./Img/love.png"><img onclick="Gamedwnld(this)" class="imgbtn" src="./Img/add-to-cart.png"><div class="info"><img class="imgbtn" src="./Img/info.png"><span class="infotext">Tooltip00 text</span></div></p><img class="Sale" src="./Img/Sale.png" /></div>
+			<div class="featurgamebox bgNG SoldGame" ><a href="#"><img src="./Img/Box.png"><p>&nbsp;Name</p></a><p><img onclick="Gameloved(this)" id="gm" class="imgbtn" src="./Img/love.png"><img onclick="Gamedwnld(this)" class="imgbtn" src="./Img/add-to-cart.png"><div class="info"><img class="imgbtn" src="./Img/info.png"><span class="infotext">Tooltip00 text</span></div></p></div>
+			<div class="featurgamebox bgNG SoldGame" ><a href="#"><img src="./Img/Box.png"><p>&nbsp;Name</p></a><p><img onclick="Gameloved(this)" id="gm" class="imgbtn" src="./Img/love.png"><img onclick="Gamedwnld(this)" class="imgbtn" src="./Img/add-to-cart.png"><div class="info"><img class="imgbtn" src="./Img/info.png"><span class="infotext">Tooltip00 text</span></div></p></div>
+			<div class="featurgamebox bgNG FreeGame" ><a href="#"><img src="./Img/Box.png"><p>&nbsp;Name</p></a><p><img onclick="Gameloved(this)" id="gm" class="imgbtn" src="./Img/love.png"><img onclick="Gamedwnld(this)" class="imgbtn" src="./Img/download.png"><div class="info"><img class="imgbtn" src="./Img/info.png"><span class="infotext">Tooltip00 text</span></div></p><img class="free" src="./Img/free.png" /></div>
+			<div class="featurgamebox bgNG SoldGame" ><a href="#"><img src="./Img/Box.png"><p>&nbsp;Name</p></a><p><img onclick="Gameloved(this)" id="gm" class="imgbtn" src="./Img/love.png"><img onclick="Gamedwnld(this)" class="imgbtn" src="./Img/add-to-cart.png"><div class="info"><img class="imgbtn" src="./Img/info.png"><span class="infotext">Tooltip00 text</span></div></p></div>
+			<div class="featurgamebox bgNG SoldGame" ><a href="#"><img src="./Img/Box.png"><p>&nbsp;Name</p></a><p><img onclick="Gameloved(this)" id="gm" class="imgbtn" src="./Img/love.png"><img onclick="Gamedwnld(this)" class="imgbtn" src="./Img/add-to-cart.png"><div class="info"><img class="imgbtn" src="./Img/info.png"><span class="infotext">Tooltip00 text</span></div></p></div>
+			<div class="featurgamebox bgNG SoldGame" ><a href="#"><img src="./Img/Box.png"><p>&nbsp;Name</p></a><p><img onclick="Gameloved(this)" id="gm" class="imgbtn" src="./Img/love.png"><img onclick="Gamedwnld(this)" class="imgbtn" src="./Img/add-to-cart.png"><div class="info"><img class="imgbtn" src="./Img/info.png"><span class="infotext">Tooltip00 text</span></div></p></div>
+			<div class="featurgamebox bgNG SoldGame" ><a href="#"><img src="./Img/Box.png"><p>&nbsp;Name</p></a><p><img onclick="Gameloved(this)" id="gm" class="imgbtn" src="./Img/love.png"><img onclick="Gamedwnld(this)" class="imgbtn" src="./Img/add-to-cart.png"><div class="info"><img class="imgbtn" src="./Img/info.png"><span class="infotext">Tooltip00 text</span></div></p></div>
+			<div class="featurgamebox bgNG SoldGame" ><a href="#"><img src="./Img/Box.png"><p>&nbsp;Name</p></a><p><img onclick="Gameloved(this)" id="gm" class="imgbtn" src="./Img/love.png"><img onclick="Gamedwnld(this)" class="imgbtn" src="./Img/add-to-cart.png"><div class="info"><img class="imgbtn" src="./Img/info.png"><span class="infotext">Tooltip00 text</span></div></p></div>
+			<div class="featurgamebox bgNG FreeGame" ><a href="#"><img src="./Img/Box.png"><p>&nbsp;Name</p></a><p><img onclick="Gameloved(this)" id="gm" class="imgbtn" src="./Img/love.png"><img onclick="Gamedwnld(this)" class="imgbtn" src="./Img/download.png"><div class="info"><img class="imgbtn" src="./Img/info.png"><span class="infotext">Tooltip00 text</span></div></p><img class="free" src="./Img/free.png" /></div>
+			<div class="featurgamebox bgNG FreeGame" ><a href="#"><img src="./Img/Box.png"><p>&nbsp;Name</p></a><p><img onclick="Gameloved(this)" id="gm" class="imgbtn" src="./Img/love.png"><img onclick="Gamedwnld(this)" class="imgbtn" src="./Img/download.png"><div class="info"><img class="imgbtn" src="./Img/info.png"><span class="infotext">Tooltip00 text</span></div></p><img class="free" src="./Img/free.png" /></div>
+			<div class="featurgamebox bgNG SoldGame" ><a href="#"><img src="./Img/Box.png"><p>&nbsp;Name</p></a><p><img onclick="Gameloved(this)" id="gm" class="imgbtn" src="./Img/love.png"><img onclick="Gamedwnld(this)" class="imgbtn" src="./Img/add-to-cart.png"><div class="info"><img class="imgbtn" src="./Img/info.png"><span class="infotext">Tooltip00 text</span></div></p></div>
+			<div class="featurgamebox bgNG FreeGame" ><a href="#"><img src="./Img/Box.png"><p>&nbsp;Name</p></a><p><img onclick="Gameloved(this)" id="gm" class="imgbtn" src="./Img/love.png"><img onclick="Gamedwnld(this)" class="imgbtn" src="./Img/download.png"><div class="info"><img class="imgbtn" src="./Img/info.png"><span class="infotext">Tooltip00 text</span></div></p><img class="free" src="./Img/free.png" /></div>
+			<div class="featurgamebox bgNG FreeGame" ><a href="#"><img src="./Img/Box.png"><p>&nbsp;Name</p></a><p><img onclick="Gameloved(this)" id="gm" class="imgbtn" src="./Img/love.png"><img onclick="Gamedwnld(this)" class="imgbtn" src="./Img/download.png"><div class="info"><img class="imgbtn" src="./Img/info.png"><span class="infotext">Tooltip00 text</span></div></p><img class="free" src="./Img/free.png" /></div>
+			<div class="featurgamebox bgNG FreeGame" ><a href="#"><img src="./Img/Box.png"><p>&nbsp;Name</p></a><p><img onclick="Gameloved(this)" id="gm" class="imgbtn" src="./Img/love.png"><img onclick="Gamedwnld(this)" class="imgbtn" src="./Img/download.png"><div class="info"><img class="imgbtn" src="./Img/info.png"><span class="infotext">Tooltip00 text</span></div></p><img class="free" src="./Img/free.png" /></div>
+			<div class="featurgamebox bgNG SoldGame" ><a href="#"><img src="./Img/Box.png"><p>&nbsp;Name</p></a><p><img onclick="Gameloved(this)" id="gm" class="imgbtn" src="./Img/love.png"><img onclick="Gamedwnld(this)" class="imgbtn" src="./Img/add-to-cart.png"><div class="info"><img class="imgbtn" src="./Img/info.png"><span class="infotext">Tooltip00 text</span></div></p></div>
+			<div class="featurgamebox bgNG FreeGame" ><a href="#"><img src="./Img/Box.png"><p>&nbsp;Name</p></a><p><img onclick="Gameloved(this)" id="gm" class="imgbtn" src="./Img/love.png"><img onclick="Gamedwnld(this)" class="imgbtn" src="./Img/download.png"><div class="info"><img class="imgbtn" src="./Img/info.png"><span class="infotext">Tooltip00 text</span></div></p><img class="free" src="./Img/free.png" /></div>
+			<!--a-->
+		</div>
+		<div id="SaleGameBox"><img class="closebtnSGB" onclick="CloseSaleGameBox()" src="./Img/close.png"><img class="sideImg" src="./Img/Box.png"><h2>&nbsp;Saving The Tree Power:<br></h2><p id="SaleTime"></p></div>
+		<header>
+			<img class="Logox2" src="./Img/Logox2.png">
+			<img class="LogoxN" src="./Img/LogoxN.png">
+			<button class="button" onclick="showHome()" title="In home you can find the featured games !!">Home</button>
+			<button class="button" onclick="showAbout()" title="In about you can know everything about this website ☺☻☺">About</button>
+			<button class="button" onclick="showGames()" title="In games you will find all our games ☺♥♦">Games</button>
+		</header>
+		<footer>
+			&copy;&nbsp;YahyaBourouina Games 2022-2023
+		</footer>
+		<div id="bgStngsGry" onclick="closeSettingsBox()"></div>
+		<div id="settingsBox">
+			<img class="closebtnSB" onclick="closeSettingsBox()" src="./Img/close.png"><br><br>
+			<h1>Pricing :</h1><br>
+			<button class="btn" id="btn" onclick="showAllGames()">All Games</button><br>
+			<button class="btn" id="btn" onclick="showFreeGames()">Free Games</button><br>
+			<button class="btn" id="btn" onclick="showSoldGames()">Sold Games</button><br>
+			<p id="s"></p>
+		</div>
+		<div id="attention"><img src="./Img/alert.png"><br>This site is not for your device<br><button onclick="hideIt()"><img width="20px" src="./Img/eye.png"><p>take a look<p></button></div>
+		<div id="MainInternet"><div id="internetStatusDiv"><p id="internetStatus"></p></div></div>
+		<script src="./JavaScript/Navbar.js"></script>
+		<script src="./JavaScript/LikeGameFunc.js"></script>
+		<script src="./JavaScript/ShowingAllFreeSoldGames.js"></script>
+		<script src="./JavaScript/SaleTime.js"></script>
+		<script src="./JavaScript/InternetOK.js"></script>
+	</body>
+</html>
